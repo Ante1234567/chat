@@ -1,16 +1,24 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-}
-
-.App-header {
-  background-color: #262626;
-  overflow: visible;
-  width: 100%;
-  text-align: center;
-  color: white;
 }
 
 .Messages-list {
@@ -84,16 +92,60 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 1px solid orangered;
+  border: 2px solid #2A3166;
   flex-grow: 1;
 }
 
 button {
   padding: 5px 10px;
   font-size: 16px;
-  background-color: orangered;
+  background-color: #2A3166;
   color: white;
   border: none;
   border-radius: 8px;
   margin-left: 10px;
+  margin-right: 20px;
 }
+
+.chat-header {
+  color: #eff0f5;
+  padding-left: 30px;
+  background-color: #1181B2; 
+  padding-top: 20px;
+}
+
+.chat-header h1 {
+  margin: 0%;
+}
+
+.chat-header p {
+  margin-top: 0%;
+  padding-left: 40px;
+}
+
+.float-parent-element { 
+  width: 100%; 
+  height: 100%;
+} 
+.float-message-element { 
+  float: left; 
+  width: 35%; 
+} 
+.float-chat-element { 
+  float: left; 
+  width: 65%; 
+} 
+.message-block { 
+  background-color: #1181B2; 
+  height: 100%; 
+} 
+.chat-block { 
+  height: 100%; 
+  background-color: #DDEDF4; 
+}
+
+.message-container{
+  background-color: #1181b2;
+}
+
+

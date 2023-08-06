@@ -47,18 +47,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h1>My Chat App</h1>
-        </div>
-        <Messages
-          messages={this.state.messages}
-          currentMember={this.state.member}
-        />
+  <div class="float-parent-element">
+    <div class="float-message-element">
+      <div class="message-block">
+      <div class="chat-header">
+        <h1>CHAT</h1>
+        <p>With Friends</p>
         <Input
         onSendMessage={this.onSendMessage}
       />
       </div>
+      </div>
+    </div>
+    <div class="float-chat-element">
+      <div class="chat-block">
+      <Messages
+          messages={this.state.messages}
+          currentMember={this.state.member}
+        />
+      </div>
+    </div>
+  </div>
     );
   }
 
